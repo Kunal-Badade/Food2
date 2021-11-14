@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Food<span>.</span></a>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Always Choose Good</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Pariatur porro eos magnam corporis mollitia et 
+                dignissimos itaque rerum a eligendi ducimus autem 
+                omnis perferendis, tempora minus assumenda quidem 
+                officiis quod.</p>
+                <a href="#" class="btn">Our Menu</a>
+
+        </div>
+
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Doloremque excepturi fugiat reiciendis magni quasi dolore 
+                     impedit tenetur nihil? Libero quas provident hic 
+                     corporis, neque consequuntur esse voluptatibus similique 
+                     explicabo enim!</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="pexels-trang-doan-1092730.jpg"">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText2"><span>C</span>ontact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="send">
+            </div>
+        </div>
+
+    </section>
+    <div class="copyrightText">
+        <p>copyright 2021. @Kunal Badade</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+    
+</body>
+</html>
